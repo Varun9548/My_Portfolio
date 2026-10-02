@@ -5,6 +5,7 @@ import Home from './components/home';
 import Blog from './components/blog';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import FloatingCard from './components/FloatingCard';
 import './index.css';
 
 export default function App() {
@@ -41,6 +42,7 @@ export default function App() {
   return (
     <>
       <Navbar active={active} />
+      <FloatingCard />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />

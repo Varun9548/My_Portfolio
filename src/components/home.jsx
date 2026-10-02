@@ -1,4 +1,5 @@
 import React from 'react';
+import EyeTracker from './EyeTracker';
 
 export default function Home() {
   return (
@@ -11,8 +12,15 @@ export default function Home() {
             I'm <span className="highlight">Varun Khandelwal</span>
           </h2>
           <h3> Web Developer</h3>
+
+          {/* 👀 Dynamic eyes mascot — reacts to what you hover */}
+          <div className="mascot-wrapper">
+            <EyeTracker />
+          </div>
+
           <div className="buttons">
-            <a href="/contact" className="btn">Hire Me</a>
+            {/* data-mood="happy" → eyes light up when hovering Hire Me */}
+            <a href="/contact" className="btn" data-mood="happy">Hire Me</a>
             <a href="#projects" className="btn-outline">My Works</a>
             <a href="https://github.com/Varun9548" target="_blank" rel="noopener noreferrer" className="btn-outline">
               GitHub

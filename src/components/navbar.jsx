@@ -67,7 +67,11 @@ export default function Navbar({ active }) {
             </Link>
           </li>
           <li>
-            <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
+            <Link
+              to="/contact"
+              className={location.pathname === '/contact' ? 'active' : ''}
+              data-mood="happy"
+            >
               Contact
             </Link>
           </li>

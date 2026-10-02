@@ -29,7 +29,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact" data-mood="happy">
       <h2>Get in Touch</h2>
       <p>I'd love to hear from you. Whether it's a project idea or just a hello, feel free to reach out!</p>
 
